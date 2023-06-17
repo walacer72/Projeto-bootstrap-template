@@ -26,13 +26,14 @@
 
 #navbar {
     border-bottom: 1px solid #7a7a7a;
+    
 }
 
 #navbar a:hover {
     color: #7a7a7a; 
 }
 
-#navbar a.active {
+#nav-itens a.active {
     border-bottom: 1px solid #050505;
 }
 
@@ -50,15 +51,16 @@
     margin-left: 0.5em;
 }
 
-#navbar-items .navbar-nav {
+#nav-itens .navbar-nav {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-#navbar-items .nav-item {
+#nav-itens .nav-item {
     margin: 0 1em;
 }
+
 
 
 
@@ -76,7 +78,7 @@
 #slider .carousel-caption h5 {
     font-size: 2em;
     text-shadow: #000 2px 2px;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .btn {
@@ -106,14 +108,14 @@
     background-color: #000;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 759px) {
     #slider .carousel-caption {
         bottom: 18em;
     }
     #slider .carousel-caption h5 {
         font-size: 5em;
         text-shadow: #000 2px 3px;
-        margin-bottom: 1em;
+        
     }
     #slider .btn {
         padding: 0.6 1.6em;
@@ -122,6 +124,21 @@
     }
     .carousel-indicators {
         bottom: 7em;
+    }
+}
+@media(min-width: 760px) and (max-width: 990px) {
+    #slider .carousel-caption {
+        bottom: 12em;
+    }
+    #slider .carousel-caption h5 {
+        font-size: 4em;
+        text-shadow: #000 2px 3px;
+        
+    }
+    #slider .btn {
+        padding: 0.6 1.6em;
+        font-size: 1.2em; 
+
     }
 }
 
@@ -176,13 +193,29 @@
     bottom: 2em;
     content: "";
 }
+.title.border:before {
+    bottom: 3em;
+    
+}
 
 @media(max-width: 350px) {
     .title.border:before {
         bottom: 3em;
         
     }
+    .title:before {
+        bottom: 2em;
+    }
 }
+@media(max-width: 283px) {
+    
+    .title:before {
+        bottom: 3em;
+    }
+}
+
+
+
 
 
 
